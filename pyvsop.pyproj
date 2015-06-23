@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="setup.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="tests\test_util.py">
       <SubType>Code</SubType>
     </Compile>
@@ -51,6 +54,7 @@
     <Folder Include="vsop\vsop87\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DESCRIPTION.rst" />
     <Content Include="vsop\vsop87\VSOP87A.ear" />
     <Content Include="vsop\vsop87\VSOP87A.emb" />
     <Content Include="vsop\vsop87\VSOP87A.jup" />
