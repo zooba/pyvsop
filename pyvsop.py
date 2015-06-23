@@ -14,8 +14,10 @@ for date in daterange(2015, 2016, step=timedelta(days=7)):
     # Create a map of the solar system on a particular day
     ss_map = SolarSystemMap(100, 27, date)
     
-    for initial, planet in PLANETS:
-        ss_map.add_planet(initial, planet())
+    for initial, planet_type in PLANETS:
+        planet = planet_type()
+        
+        ss_map.add_planet(initial, planet)
 
     print('\n{}\n{}'.format(date, ss_map), end='')
     try:
